@@ -13,7 +13,7 @@ const Booking = () => {
 
   // for getting specific order
   useEffect(() => {
-    fetch(`http://localhost:5000/singleProduct/${productId}`)
+    fetch(`https://thawing-forest-88832.herokuapp.com/singleProduct/${productId}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
@@ -29,7 +29,7 @@ const Booking = () => {
     data.img = product.img;
 
     // sending to data base
-    fetch("http://localhost:5000/confirmOrder", {
+    fetch("https://thawing-forest-88832.herokuapp.com/confirmOrder", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

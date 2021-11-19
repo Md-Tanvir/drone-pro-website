@@ -5,7 +5,7 @@ const ManageProducts = () => {
 
   // Getting all products
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://thawing-forest-88832.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -14,7 +14,7 @@ const ManageProducts = () => {
   const handleDelete = (id) => {
     const action = window.confirm("Do you want to delete the product?");
     if (action) {
-      fetch(`http://localhost:5000/delteProduct/${id}`, {
+      fetch(`https://thawing-forest-88832.herokuapp.com/delteProduct/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

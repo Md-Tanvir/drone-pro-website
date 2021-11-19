@@ -6,7 +6,7 @@ const ManageAllOrders = () => {
 
   // getting all orders
   useEffect(() => {
-    fetch("http://localhost:5000/allOrders")
+    fetch("https://thawing-forest-88832.herokuapp.com/allOrders")
       .then((res) => res.json())
       .then((data) => setAllOrders(data));
   }, [isApproved]);
@@ -16,7 +16,7 @@ const ManageAllOrders = () => {
   const handleDelete = (id) => {
     const action = window.confirm("Do you want to cancel the product?");
     if (action) {
-      fetch(`http://localhost:5000/delteOrder/${id}`, {
+      fetch(`https://thawing-forest-88832.herokuapp.com/delteOrder/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -31,7 +31,7 @@ const ManageAllOrders = () => {
   };
   // updating order status
   const handleStatus = (id) => {
-    fetch(`http://localhost:5000/allOrders/${id}`, {
+    fetch(`https://thawing-forest-88832.herokuapp.com/allOrders/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(allOrders),

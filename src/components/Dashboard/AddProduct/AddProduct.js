@@ -12,7 +12,7 @@ const AddProduct = () => {
 
   // for adding new product
   const onSubmit = (data) => {
-    fetch("http://localhost:5000/addProducts", {
+    fetch("https://thawing-forest-88832.herokuapp.com/addProducts", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(data),

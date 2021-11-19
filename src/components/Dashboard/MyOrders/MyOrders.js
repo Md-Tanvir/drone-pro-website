@@ -8,7 +8,7 @@ const MyOrders = () => {
 
   // get orders of logged user
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrders/${email}`)
+    fetch(`https://thawing-forest-88832.herokuapp.com/myOrders/${email}`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -17,7 +17,7 @@ const MyOrders = () => {
   const handleCancel = (id) => {
     const action = window.confirm("Do you want to cancel the product?");
     if (action) {
-      fetch(`http://localhost:5000/delteOrder/${id}`, {
+      fetch(`https://thawing-forest-88832.herokuapp.com/delteOrder/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

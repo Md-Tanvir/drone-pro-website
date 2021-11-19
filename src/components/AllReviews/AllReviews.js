@@ -7,7 +7,7 @@ const AllReviews = () => {
 
   // Getting all Reviews
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://thawing-forest-88832.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

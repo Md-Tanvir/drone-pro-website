@@ -54,8 +54,9 @@ const Home = () => {
               LET'S FLY <br /> WITH US TO <br />
               THE <span>UNKNOWN</span>
             </h1>
-
+   <Link to="/products">
             <button className="btn btn-dark hero-btn">EXPLORE NOW</button>
+            </Link>
           </div>
           <div className="col-12 col-md-6">
             <img src={banner} className="img-fluid" alt="" />

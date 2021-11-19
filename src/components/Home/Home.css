@@ -13,3 +13,10 @@
     background-color: white;
     color: black;
 }
+
+@media (max-width:600px) {
+    .hero-area h1{
+        font-size: 45px;
+     
+    }
+}

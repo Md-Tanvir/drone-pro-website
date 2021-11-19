@@ -18,7 +18,6 @@ const Header = () => {
           {/* Main Logo */}
           <Link style={{ textDecoration: "none", width: "20%" }} to="/home">
             <div className="navbar-brand">
-              <img src='' className="main-logo" alt="" />
               <p>DronePro</p>
             </div>
           </Link>

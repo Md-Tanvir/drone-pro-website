@@ -1,0 +1,17 @@
+.service-input{
+    width: 80% ;
+    max-width: 400px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    outline: none;
+    border: 3px solid black;
+}
+.login-form{
+    text-align: center;
+}
+.btn-submit{
+    padding: 8px 40px;
+    background-color: black;
+    color: white;
+}

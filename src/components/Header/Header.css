@@ -1,0 +1,30 @@
+.main-logo{
+    width: 8%;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-weight: 700;
+}
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.navbar-brand p{
+    font-weight: 700;
+    margin-left: 5px;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+.navbar-brand p span{
+    color:red ;
+}
+.items{
+    font-weight: 600;
+    color: black;
+}
+.items:hover{
+    color: red;
+}
+a.navbar-brand{
+    width: 20%;
+}

@@ -1,0 +1,20 @@
+.product-input{
+    width: 100% ;
+    max-width: 400px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    outline: none;
+    border: 3px solid #094067;
+}
+.login-form{
+    text-align: center;
+}
+.btn-submit{
+    padding: 8px 40px;
+    color: white;
+}
+.btn-submit:hover{
+    background-color: #ef4565;
+    color: white;
+}
